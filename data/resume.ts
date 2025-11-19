@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "John J. Kim",
+  name: "John Kim",
   title: "Computer Science Student & Researcher",
   email: "futurekim07@gmail.com",
   phone: "703-755-5768",
