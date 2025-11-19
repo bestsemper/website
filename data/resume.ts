@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Computer Science Student & Researcher",
   email: "futurekim07@gmail.com",
   phone: "703-755-5768",
-  location: "Charlottesville, VA",
+  location: "McLean, VA",
   github: "https://github.com/bestsemper",
   linkedin: "https://linkedin.com/in/john-kim",
 };

@@ -1,5 +1,49 @@
 @import "tailwindcss";
 
+/* Light Mode (Default) */
+:root {
+  --background: #ffffff;
+  --background-secondary: #f9fafb;
+  --foreground: #1a1a1a;
+  --foreground-secondary: #6b7280;
+  --foreground-tertiary: #9ca3af;
+  --border: #e5e7eb;
+  --border-light: #f3f4f6;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --logo-color: #1a1a1a;
+  --logo-dot: #1a1a1a;
+}
+
+/* Dark Mode - Manual Toggle */
+:root[style*="color-scheme: dark"] {
+  --background: #0a0a0a;
+  --background-secondary: #1a1a1a;
+  --foreground: #f1f5f9;
+  --foreground-secondary: #cbd5e1;
+  --foreground-tertiary: #94a3b8;
+  --border: #334155;
+  --border-light: #475569;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --logo-color: #ffffff;
+  --logo-dot: #ffffff;
+}
+
+/* Dark Mode - System Preference (if not manually set) */
+@media (prefers-color-scheme: dark) {
+  :root:not([style*="color-scheme"]) {
+    --background: #0a0a0a;
+    --background-secondary: #1a1a1a;
+    --foreground: #f1f5f9;
+    --foreground-secondary: #cbd5e1;
+    --foreground-tertiary: #94a3b8;
+    --border: #334155;
+    --border-light: #475569;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --logo-color: #ffffff;
+    --logo-dot: #ffffff;
+  }
+}
+
 @layer base {
   * {
     margin: 0;
@@ -13,12 +57,12 @@
   }
 
   body {
+    background: var(--background);
+    color: var(--foreground);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    background-color: #ffffff;
-    color: #1a1a1a;
     line-height: 1.6;
   }
 }
@@ -96,7 +140,8 @@
     transform-origin: center;
     stroke: #303030;
     animation-delay: 0s;
-    fill: #1a1a1a;
+    fill: var(--logo-dot);
+    transition: fill 0.3s ease;
   }
 
   .stroke {
@@ -104,7 +149,37 @@
     stroke-dasharray: 0px 0;
     animation: grow 10s ease-out forwards infinite;
     transform-origin: center;
-    stroke: #1a1a1a;
+    stroke: var(--logo-color);
     animation-delay: 0s;
+    transition: stroke 0.3s ease;
+  }
+
+  /* Utility classes that use CSS variables */
+  .bg-primary {
+    background-color: var(--background);
+  }
+
+  .bg-secondary {
+    background-color: var(--background-secondary);
+  }
+
+  .text-primary {
+    color: var(--foreground);
+  }
+
+  .text-secondary {
+    color: var(--foreground-secondary);
+  }
+
+  .text-tertiary {
+    color: var(--foreground-tertiary);
+  }
+
+  .border-primary {
+    border-color: var(--border);
+  }
+
+  .border-secondary {
+    border-color: var(--border-light);
   }
 }
