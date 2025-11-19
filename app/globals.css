@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (prefers-reduced-motion) {
+    .path1 {
+      animation: none !important;
+      stroke-dasharray: unset !important;
+    }
+    .stroke {
+      animation: none !important;
+      stroke-dasharray: unset !important;
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    92% {
+      opacity: 1;
+    }
+    95%,
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes grow {
+    0% {
+      opacity: 0;
+    }
+    8% {
+      stroke-dashoffset: 1px;
+      stroke-dasharray: 0 350px;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    13% {
+      stroke-dasharray: 109px 241px;
+    }
+    13.3% {
+      stroke-dasharray: 109px 241px;
+    }
+    25% {
+      stroke-dasharray: 350px 0;
+    }
+    80% {
+      stroke-dasharray: 350px 0;
+    }
+    90%,
+    to {
+      stroke-dasharray: 0 350px;
+    }
+  }
+
+  .dot {
+    stroke-dashoffset: 1px;
+    stroke-dasharray: 0px 0;
+    animation: appear 10s ease forwards infinite;
+    transform-origin: center;
+    stroke: #303030;
+    animation-delay: 0s;
+    fill: #1a1a1a;
+  }
+
+  .stroke {
+    stroke-dashoffset: 1px;
+    stroke-dasharray: 0px 0;
+    animation: grow 10s ease-out forwards infinite;
+    transform-origin: center;
+    stroke: #1a1a1a;
+    animation-delay: 0s;
+  }
 }

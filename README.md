@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
+
+Modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.
+
+## Features
+
+- Built with Next.js 14 App Router
+- Styled with Tailwind CSS and CSS Variables
+- Dark/Light mode support (CSS variables ready)
+- Fully responsive design
+- Smooth animations and transitions
+- TypeScript for type safety
+- Modular component architecture
+
+## Tech Stack
+
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + CSS Variables
+- **Font:** Poppins (Google Fonts)
+- **Icons:** Heroicons & Custom SVG
+
+## Project Structure
+
+```
+/
+├── app/                    # Next.js App Router
+│   ├── globals.css        # Global styles & CSS variables
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── Navbar.tsx         # Navigation bar
+│   ├── Hero.tsx           # Hero section with typing effect
+│   ├── About.tsx          # About & Education
+│   ├── Experience.tsx     # Work experience
+│   ├── Projects.tsx       # Project showcase
+│   ├── Skills.tsx         # Skills & Languages
+│   ├── Contact.tsx        # Contact information
+│   └── Footer.tsx         # Footer
+└── data/
+    └── resume.ts          # Resume data & content
+```
+
+## Design Features
+
+- **Gradient Theme:** Smooth gradients for text and backgrounds
+  - Light mode: Teal to Purple (#74EBD5 → #9FACE6)
+  - Dark mode: Pink to Purple (#AA367C → #4A2FBD)
+- **Typography:** Poppins font for modern, clean look
+- **Animations:** Typing effect on hero section, hover effects on cards
+- **Responsive:** Mobile-first design with breakpoints
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Run development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Customization
+
+### Update Personal Information
+Edit `data/resume.ts` to update:
+- Personal info (name, email, phone, etc.)
+- Education details
+- Work experience
+- Projects
+- Skills
+- Languages
+
+### Modify Colors
+Edit CSS variables in `app/globals.css`:
+```css
+:root {
+  --background-color: #ffffff;
+  --primary-color: #2c2c2c;
+  --gradient-from: #74EBD5;
+  --gradient-to: #9FACE6;
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy
 
-## Learn More
+Deploy easily on Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bestsemper/website)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT License - feel free to use this for your own portfolio!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by John J. Kim
