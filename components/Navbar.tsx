@@ -15,7 +15,25 @@ export default function Navbar() {
       } else {
         setScrolled(false);
       }
+      
+      // Detect which section is currently in view
+      const sections = ["home", "about", "projects", "contact"];
+      const scrollPosition = window.scrollY + 100; // Offset for navbar height
+      
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveLink(sectionId);
+            break;
+          }
+        }
+      }
     };
+
+    // Run on mount to set initial active section
+    onScroll();
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -71,7 +89,6 @@ export default function Navbar() {
                 <a
                   key={link}
                   href={`#${link}`}
-                  onClick={() => setActiveLink(link)}
                   className="capitalize text-sm font-medium transition-colors"
                   style={{
                     color: activeLink === link 
