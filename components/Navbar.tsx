@@ -16,6 +16,12 @@ export default function Navbar() {
         setScrolled(false);
       }
       
+      // Check if we're at the bottom of the page
+      if (Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
+        setActiveLink("contact");
+        return;
+      }
+
       // Detect which section is currently in view
       const sections = ["home", "about", "projects", "contact"];
       const scrollPosition = window.scrollY + 100; // Offset for navbar height

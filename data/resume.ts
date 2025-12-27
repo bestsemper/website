@@ -7,7 +7,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  description: "Computer Science student at the University of Virginia with a passion for machine learning, AI research, and full-stack development. Currently researching human-aligned decision-making in LLM agents at ML@UVA in collaboration with Johns Hopkins APL.",
+  description: "I am a researcher and developer driven by the challenge of aligning artificial intelligence with human values. At ML@UVA, I collaborate with Johns Hopkins APL to study decision-making in LLM agents, exploring how we can make AI systems more reliable and interpretable. Beyond research, I enjoy building practical full-stack applications and solving challenging math & cs problems.",
 };
 
 export const education = [
@@ -72,7 +72,7 @@ export const experience = [
     description: [
       "USACO Gold Division",
       "American Invitational Mathematics Examination (AIME) Qualifier (4 times)",
-      "Active member of the Putnam and ICPC Club at UVA",
+      "Member of the Putnam and ICPC Club at UVA",
       "Former member of TJ Varsity Math Team",
     ],
   },
@@ -94,7 +94,7 @@ export const projects = [
   {
     title: "Offline AI Model for North Korea",
     description: "Offline generative AI solution for distributing reliable information in North Korea. Received $7,500 grant from Human Rights Foundation.",
-    technologies: ["Python", "LangChain", "HuggingFace", "Unsloth", "LLM Fine-tuning"],
+    technologies: ["Python", "LangChain", "HuggingFace", "Unsloth"],
     highlights: [
       "Developed offline AI solution by fine-tuning LLMs for edge devices",
       "Received $7,500 grant from Human Rights Foundation",
@@ -105,7 +105,7 @@ export const projects = [
   {
     title: "Diplomacy AI Agent Research",
     description: "Research project exploring human-aligned decision-making in the strategy game Diplomacy.",
-    technologies: ["Python", "PyTorch", "LangChain", "OpenAI API"],
+    technologies: ["Python", "PyTorch", "LangChain"],
     highlights: [
       "Studying LLM agent decision-making alignment",
       "Experimenting with fine-tuning and steering vectors",
@@ -115,41 +115,70 @@ export const projects = [
   },
 ];
 
+export const skillDefinitions = {
+  "Python": "Primary language for AI/ML research and backend development.",
+  "Java": "Object-oriented programming for scalable applications.",
+  "C++": "High-performance computing and systems programming.",
+  "JavaScript": "Core technology for interactive web development.",
+  "TypeScript": "Typed superset of JavaScript for robust application scale.",
+  "HTML": "Standard markup language for web documents.",
+  "CSS": "Style sheet language for web presentation.",
+  "React": "A JavaScript library for building user interfaces.",
+  "Next.js": "The React Framework for the Web.",
+  "Django": "A high-level Python Web framework that encourages rapid development.",
+  "FastAPI": "A modern web framework for building APIs with Python.",
+  "Tailwind CSS": "A utility-first CSS framework for rapidly building custom designs.",
+  "Git": "Distributed version control system.",
+  "Docker": "Platform for developing, shipping, and running applications in containers.",
+  "Linux Shell": "Command-line interface for interacting with the operating system.",
+  "Jira": "Issue tracking and project management tool.",
+  "AWS": "Comprehensive cloud computing platform.",
+  "CI/CD": "Automating build, test, and deployment pipelines.",
+  "PyTorch": "Open source machine learning framework.",
+  "TensorFlow": "End-to-end open source platform for machine learning.",
+  "LangChain": "Framework for developing applications powered by LLMs.",
+  "Agno": "Multi-agent framework for building private and secure AI products.",
+  "MCP": "Model Context Protocol that enables AI agents to access external tools and data.",
+  "Unsloth": "Optimized library for faster LLM fine-tuning.",
+  "YOLO": "Real-time object detection system.",
+  "CNNs": "Convolutional Neural Networks for visual imagery analysis.",
+  "Computer Vision": "Field of AI enabling computers to derive information from images.",
+  "HuggingFace": "Platform and community for open-source machine learning models.",
+};
+
 export const skills = {
   "Programming Languages": [
-    { name: "Python", description: "Primary language for AI/ML research and backend development." },
-    { name: "Java", description: "Object-oriented programming for scalable applications." },
-    { name: "C++", description: "High-performance computing and systems programming." },
-    { name: "JavaScript", description: "Core technology for interactive web development." },
-    { name: "TypeScript", description: "Typed superset of JavaScript for robust application scale." },
-    { name: "HTML", description: "Standard markup language for web documents." },
-    { name: "CSS", description: "Style sheet language for web presentation." },
+    { name: "Python", description: skillDefinitions["Python"] },
+    { name: "Java", description: skillDefinitions["Java"] },
+    { name: "C++", description: skillDefinitions["C++"] },
+    { name: "JavaScript", description: skillDefinitions["JavaScript"] },
+    { name: "TypeScript", description: skillDefinitions["TypeScript"] },
+    { name: "HTML", description: skillDefinitions["HTML"] },
+    { name: "CSS", description: skillDefinitions["CSS"] },
   ],
-  "Frameworks": [
-    { name: "React", description: "A JavaScript library for building user interfaces." },
-    { name: "Next.js", description: "The React Framework for the Web." },
-    { name: "Django", description: "A high-level Python Web framework that encourages rapid development." },
-    { name: "Tailwind CSS", description: "A utility-first CSS framework for rapidly building custom designs." },
-    { name: "MCP", description: "Model Context Protocol for connecting AI models to data and tools." },
-    { name: "FastAPI", description: "A modern, fast (high-performance), web framework for building APIs with Python." },
+  "Web Development": [
+    { name: "React", description: skillDefinitions["React"] },
+    { name: "Next.js", description: skillDefinitions["Next.js"] },
+    { name: "Django", description: skillDefinitions["Django"] },
+    { name: "FastAPI", description: skillDefinitions["FastAPI"] },
+    { name: "Tailwind CSS", description: skillDefinitions["Tailwind CSS"] },
   ],
   "Developer Tools": [
-    { name: "Git", description: "Distributed version control system." },
-    { name: "Docker", description: "Platform for developing, shipping, and running applications in containers." },
-    { name: "Linux Shell", description: "Command-line interface for interacting with the operating system." },
-    { name: "Jira", description: "Issue tracking and project management tool." },
-    { name: "AWS", description: "Comprehensive cloud computing platform." },
-    { name: "CI/CD", description: "Continuous Integration and Continuous Delivery practices." },
+    { name: "Git", description: skillDefinitions["Git"] },
+    { name: "Docker", description: skillDefinitions["Docker"] },
+    { name: "Linux Shell", description: skillDefinitions["Linux Shell"] },
+    { name: "Jira", description: skillDefinitions["Jira"] },
+    { name: "AWS", description: skillDefinitions["AWS"] },
+    { name: "CI/CD", description: skillDefinitions["CI/CD"] },
   ],
-  "ML/AI Libraries": [
-    { name: "PyTorch", description: "Open source machine learning framework." },
-    { name: "TensorFlow", description: "End-to-end open source platform for machine learning." },
-    { name: "NumPy", description: "Fundamental package for scientific computing with Python." },
-    { name: "pandas", description: "Data analysis and manipulation tool." },
-    { name: "LangChain", description: "Framework for developing applications powered by language models." },
-    { name: "Agno", description: "Multi-agent framework for building private and secure AI products." },
-    { name: "Unsloth", description: "Optimized library for faster LLM fine-tuning." },
-    { name: "YOLO", description: "Real-time object detection system." },
+  "AI & ML": [
+    { name: "PyTorch", description: skillDefinitions["PyTorch"] },
+    { name: "TensorFlow", description: skillDefinitions["TensorFlow"] },
+    { name: "LangChain", description: skillDefinitions["LangChain"] },
+    { name: "Agno", description: skillDefinitions["Agno"] },
+    { name: "MCP", description: skillDefinitions["MCP"] },
+    { name: "Unsloth", description: skillDefinitions["Unsloth"] },
+    { name: "YOLO", description: skillDefinitions["YOLO"] },
   ],
 };
 

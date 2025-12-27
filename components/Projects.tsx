@@ -1,22 +1,17 @@
 "use client";
 
-import { projects, skills } from "@/data/resume";
+import { projects, skillDefinitions } from "@/data/resume";
 import { SkillPill, SkillItem } from "./SkillPill";
 
 // Helper to find skill description
 const getSkillWithDescription = (techName: string): string | SkillItem => {
-  for (const category of Object.values(skills)) {
-    const found = category.find(item => {
-      if (typeof item === "string") return item === techName;
-      return item.name === techName;
-    });
-    
-    if (found) {
-      // If found as string, return string (no description available)
-      // If found as object, return object (has description)
-      return found;
-    }
+  // @ts-ignore - we know skillDefinitions is an object with string keys
+  const description = skillDefinitions[techName];
+  
+  if (description) {
+    return { name: techName, description };
   }
+  
   return techName;
 };
 
