@@ -47,10 +47,9 @@ export const experience = [
     location: "University of Virginia, Charlottesville, VA",
     period: "September 2025 - Present",
     description: [
-      "Exploring the strategy game Diplomacy to study human-aligned decision-making in Large Language Model (LLM) agents",
-      "Investigating methods for aligning AI decisions with human behavior distributions using fine-tuning techniques",
-      "Experimenting with steering vectors and advanced prompting techniques to mimic distinct human playstyles",
-      "Collaborating with Johns Hopkins Applied Physics Laboratory on cutting-edge AI alignment research",
+      "Explored the strategy game Diplomacy to study human-aligned decision-making in LLM agents",
+      "Investigated methods for aligning AI decisions with human behavior distributions using fine-tuning",
+      "Experimented with steering vectors and prompting techniques to mimic distinct human playstyles",
     ],
   },
   {
@@ -59,9 +58,9 @@ export const experience = [
     location: "Seoul, South Korea",
     period: "June 2025 - August 2025",
     description: [
-      "Developed and deployed an AI Agent using Model Context Protocol (MCP) that automated key IoT workflows",
-      "Served as a primary contributor to MySmaX's user-facing production web platform using Next.js",
-      "Reduced manual configuration time for internal users and improved system responsiveness",
+      "Built and deployed an AI agent for automating IoT workflows using Model Context Protocol (MCP)",
+      "Applied machine learning–based anomaly detection to analyze IoT device data",
+      "Served as a primary contributor to MySmaX’s user-facing production website using Next.js",
     ],
   },
   {
@@ -82,7 +81,7 @@ export const projects = [
   {
     title: "Alpine Ski Racing AI Analysis Model",
     description: "Deep neural network using CNNs to provide ski racers with quantitative feedback from video analysis.",
-    technologies: ["Python", "YOLO", "PyTorch", "CNNs", "Computer Vision"],
+    technologies: ["Python", "YOLO", "PyTorch", "CNNs"],
     highlights: [
       "Built a deep neural network using CNNs to analyze ski racing technique",
       "Used YOLO for pose extraction and frame-by-frame analysis",
@@ -101,17 +100,6 @@ export const projects = [
       "Optimized for resource-constrained hardware",
     ],
     period: "June 2024 - May 2025",
-  },
-  {
-    title: "Diplomacy AI Agent Research",
-    description: "Research project exploring human-aligned decision-making in the strategy game Diplomacy.",
-    technologies: ["Python", "PyTorch", "LangChain"],
-    highlights: [
-      "Studying LLM agent decision-making alignment",
-      "Experimenting with fine-tuning and steering vectors",
-      "Collaborating with Johns Hopkins APL",
-    ],
-    period: "September 2025 - Present",
   },
 ];
 
@@ -142,7 +130,6 @@ export const skillDefinitions = {
   "Unsloth": "Optimized library for faster LLM fine-tuning.",
   "YOLO": "Real-time object detection system.",
   "CNNs": "Convolutional Neural Networks for visual imagery analysis.",
-  "Computer Vision": "Field of AI enabling computers to derive information from images.",
   "HuggingFace": "Platform and community for open-source machine learning models.",
 };
 

@@ -14,22 +14,16 @@ export default function Hero() {
         </p>
         <div className="flex flex-wrap gap-4">
           <a
-            href="#projects"
-            className="inline-block px-8 py-3 rounded-md font-medium transition-colors bg-foreground text-background"
-          >
-            Projects
-          </a>
-          <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 border rounded-md font-medium transition-all border-foreground text-foreground"
+            className="inline-flex items-center justify-center px-8 py-3 rounded-full font-medium transition-all duration-200 bg-foreground text-background hover:scale-110"
           >
             Resume
           </a>
           <a
             href="#contact"
-            className="inline-block px-8 py-3 border rounded-md font-medium transition-all border-foreground text-foreground"
+            className="inline-flex items-center justify-center px-8 py-3 border rounded-full font-medium transition-all duration-200 border-foreground text-foreground hover:scale-110"
           >
             Contact
           </a>
