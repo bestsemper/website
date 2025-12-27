@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-tertiary: var(--foreground-tertiary);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+}
+
 /* Light Mode (Default) */
 :root {
   --background: #ffffff;
@@ -7,8 +17,8 @@
   --foreground: #1a1a1a;
   --foreground-secondary: #6b7280;
   --foreground-tertiary: #9ca3af;
-  --border: #e5e7eb;
-  --border-light: #f3f4f6;
+  --border: #d1d5db;
+  --border-light: #e5e7eb;
   --shadow: rgba(0, 0, 0, 0.1);
   --logo-color: #1a1a1a;
   --logo-dot: #1a1a1a;
@@ -21,27 +31,11 @@
   --foreground: #f1f5f9;
   --foreground-secondary: #cbd5e1;
   --foreground-tertiary: #94a3b8;
-  --border: #334155;
-  --border-light: #475569;
+  --border: #475569;
+  --border-light: #334155;
   --shadow: rgba(0, 0, 0, 0.3);
   --logo-color: #ffffff;
   --logo-dot: #ffffff;
-}
-
-/* Dark Mode - System Preference (if not manually set) */
-@media (prefers-color-scheme: dark) {
-  :root:not([style*="color-scheme"]) {
-    --background: #0a0a0a;
-    --background-secondary: #1a1a1a;
-    --foreground: #f1f5f9;
-    --foreground-secondary: #cbd5e1;
-    --foreground-tertiary: #94a3b8;
-    --border: #334155;
-    --border-light: #475569;
-    --shadow: rgba(0, 0, 0, 0.3);
-    --logo-color: #ffffff;
-    --logo-dot: #ffffff;
-  }
 }
 
 @layer base {

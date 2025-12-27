@@ -2,10 +2,8 @@ export const personalInfo = {
   name: "John Kim",
   title: "Computer Science Student & Researcher",
   email: "futurekim07@gmail.com",
-  phone: "703-755-5768",
-  location: "McLean, VA",
   github: "https://github.com/bestsemper",
-  linkedin: "https://linkedin.com/in/john-kim",
+  linkedin: "https://www.linkedin.com/in/john-kim-190a89334/",
 };
 
 export const about = {
@@ -89,7 +87,7 @@ export const projects = [
       "Used YOLO for pose extraction and frame-by-frame analysis",
       "Achieved reliable results aligning with real race performances",
     ],
-    github: "https://github.com/bestsemper/ski-racing-ai",
+    github: "https://github.com/bestsemper/ski-racing-video-analysis",
     period: "August 2024 - May 2025",
   },
   {
@@ -101,7 +99,6 @@ export const projects = [
       "Received $7,500 grant from Human Rights Foundation",
       "Optimized for resource-constrained hardware",
     ],
-    github: "https://github.com/bestsemper/offline-ai-nk",
     period: "June 2024 - May 2025",
   },
   {

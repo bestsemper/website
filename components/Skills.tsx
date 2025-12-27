@@ -20,7 +20,7 @@ export default function Skills() {
   return (
     <section id="skills" className="w-full py-12 pb-12 relative">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="rounded-[64px] text-center py-12 px-12 relative flex items-center" style={{background: 'var(--secondary-color)'}}>
+        <div className="rounded-[64px] text-center py-12 px-12 relative flex items-center bg-[var(--secondary-color)]">
           <div className="w-full py-12">
             <h2 className="text-5xl font-bold mb-5">Skills</h2>
             
@@ -33,11 +33,9 @@ export default function Skills() {
                       {Array.from({ length: 10 }, (_, i) => (
                         <div
                           key={i}
-                          className="w-3 h-3 rounded-full"
-                          style={{
-                            background: i < skill.level ? 'var(--linear-gradient)' : 'var(--linear-gradient)',
-                            opacity: i < skill.level ? 1 : 0.3
-                          }}
+                          className={`w-3 h-3 rounded-full bg-[var(--linear-gradient)] ${
+                            i < skill.level ? 'opacity-100' : 'opacity-30'
+                          }`}
                         />
                       ))}
                     </div>
@@ -53,11 +51,9 @@ export default function Skills() {
                       {Array.from({ length: 10 }, (_, i) => (
                         <div
                           key={i}
-                          className="w-3 h-3 rounded-full"
-                          style={{
-                            background: i < skill.level ? 'var(--linear-gradient)' : 'var(--linear-gradient)',
-                            opacity: i < skill.level ? 1 : 0.3
-                          }}
+                          className={`w-3 h-3 rounded-full bg-[var(--linear-gradient)] ${
+                            i < skill.level ? 'opacity-100' : 'opacity-30'
+                          }`}
                         />
                       ))}
                     </div>
