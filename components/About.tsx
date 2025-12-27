@@ -1,6 +1,7 @@
 "use client";
 
-import { about, education, experience } from "@/data/resume";
+import { about, education, experience, skills } from "@/data/resume";
+import SkillCard from "./SkillCard";
 
 export default function About() {
   return (
@@ -13,16 +14,6 @@ export default function About() {
             <p className="text-lg leading-relaxed mb-6 text-foreground">
               {about.description}
             </p>
-            <div className="flex flex-wrap gap-3 mt-8">
-              {["Python", "Java", "C++", "JavaScript", "TypeScript", "React", "Next.js", "PyTorch", "TensorFlow", "LangChain"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 text-sm rounded-full bg-background text-foreground border border-foreground"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
           </div>
 
           <div>
@@ -34,7 +25,7 @@ export default function About() {
                     <h4 className="text-lg font-semibold text-foreground">{edu.school}</h4>
                     <span className="text-sm text-foreground-secondary">{edu.period}</span>
                   </div>
-                  <p className="mb-1 text-foreground">{edu.degree}</p>
+                  {edu.degree && <p className="mb-1 text-foreground">{edu.degree}</p>}
                   {edu.gpa && <p className="text-sm text-foreground-secondary">GPA: {edu.gpa}</p>}
                 </div>
               ))}
@@ -59,6 +50,15 @@ export default function About() {
                     ))}
                   </ul>
                 </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-8 text-foreground">Skills</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {Object.entries(skills).map(([category, items]) => (
+                <SkillCard key={category} category={category} items={items} />
               ))}
             </div>
           </div>

@@ -13,16 +13,17 @@ export const about = {
 export const education = [
   {
     degree: "B.S. in Computer Science",
-    school: "University of Virginia, School of Engineering and Applied Sciences",
+    school: "University of Virginia",
     location: "Charlottesville, VA",
     period: "August 2025 - Present",
+    gpa: "4.0 / 4.0",
   },
   {
     degree: "Advanced Studies Diploma",
     school: "Thomas Jefferson High School for Science and Technology",
     location: "Alexandria, VA",
     period: "August 2021 - June 2025",
-    gpa: "4.463/4.0",
+    gpa: "4.463 / 4.0",
     achievements: [
       "AP Computer Science A (5)",
       "AP Calculus BC (5)",
@@ -69,7 +70,7 @@ export const experience = [
     location: "Charlottesville, VA",
     period: "2021 - Present",
     description: [
-      "USACO Gold Division competitor",
+      "USACO Gold Division",
       "American Invitational Mathematics Examination (AIME) Qualifier (4 times)",
       "Active member of the Putnam and ICPC Club at UVA",
       "Former member of TJ Varsity Math Team",
@@ -102,17 +103,6 @@ export const projects = [
     period: "June 2024 - May 2025",
   },
   {
-    title: "MySmaX Production Web Platform",
-    description: "Production-ready web platform for AIoT startup at Seoul National University built with Next.js.",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MCP"],
-    highlights: [
-      "Primary contributor to user-facing production platform",
-      "Integrated AI Agent built with Model Context Protocol",
-      "Reduced manual configuration time by 60%",
-    ],
-    period: "June 2025 - August 2025",
-  },
-  {
     title: "Diplomacy AI Agent Research",
     description: "Research project exploring human-aligned decision-making in the strategy game Diplomacy.",
     technologies: ["Python", "PyTorch", "LangChain", "OpenAI API"],
@@ -126,10 +116,41 @@ export const projects = [
 ];
 
 export const skills = {
-  "Programming Languages": ["Python", "Java", "C++", "JavaScript", "TypeScript", "HTML", "CSS"],
-  "Frameworks": ["React", "Next.js", "Django", "Tailwind CSS", "MCP", "FastAPI"],
-  "Developer Tools": ["Git", "Docker", "Linux Shell", "Jira", "AWS", "VS Code"],
-  "ML/AI Libraries": ["PyTorch", "TensorFlow", "NumPy", "pandas", "LangChain", "HuggingFace", "Agno", "Unsloth", "YOLO"],
+  "Programming Languages": [
+    { name: "Python", description: "Primary language for AI/ML research and backend development." },
+    { name: "Java", description: "Object-oriented programming for scalable applications." },
+    { name: "C++", description: "High-performance computing and systems programming." },
+    { name: "JavaScript", description: "Core technology for interactive web development." },
+    { name: "TypeScript", description: "Typed superset of JavaScript for robust application scale." },
+    { name: "HTML", description: "Standard markup language for web documents." },
+    { name: "CSS", description: "Style sheet language for web presentation." },
+  ],
+  "Frameworks": [
+    { name: "React", description: "A JavaScript library for building user interfaces." },
+    { name: "Next.js", description: "The React Framework for the Web." },
+    { name: "Django", description: "A high-level Python Web framework that encourages rapid development." },
+    { name: "Tailwind CSS", description: "A utility-first CSS framework for rapidly building custom designs." },
+    { name: "MCP", description: "Model Context Protocol for connecting AI models to data and tools." },
+    { name: "FastAPI", description: "A modern, fast (high-performance), web framework for building APIs with Python." },
+  ],
+  "Developer Tools": [
+    { name: "Git", description: "Distributed version control system." },
+    { name: "Docker", description: "Platform for developing, shipping, and running applications in containers." },
+    { name: "Linux Shell", description: "Command-line interface for interacting with the operating system." },
+    { name: "Jira", description: "Issue tracking and project management tool." },
+    { name: "AWS", description: "Comprehensive cloud computing platform." },
+    { name: "CI/CD", description: "Continuous Integration and Continuous Delivery practices." },
+  ],
+  "ML/AI Libraries": [
+    { name: "PyTorch", description: "Open source machine learning framework." },
+    { name: "TensorFlow", description: "End-to-end open source platform for machine learning." },
+    { name: "NumPy", description: "Fundamental package for scientific computing with Python." },
+    { name: "pandas", description: "Data analysis and manipulation tool." },
+    { name: "LangChain", description: "Framework for developing applications powered by language models." },
+    { name: "Agno", description: "Multi-agent framework for building private and secure AI products." },
+    { name: "Unsloth", description: "Optimized library for faster LLM fine-tuning." },
+    { name: "YOLO", description: "Real-time object detection system." },
+  ],
 };
 
 export const languages = ["English (Native)", "Korean (Native)", "Latin (Advanced Prose & Poetry)"];

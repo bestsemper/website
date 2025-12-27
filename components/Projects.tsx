@@ -1,6 +1,24 @@
 "use client";
 
-import { projects } from "@/data/resume";
+import { projects, skills } from "@/data/resume";
+import { SkillPill, SkillItem } from "./SkillPill";
+
+// Helper to find skill description
+const getSkillWithDescription = (techName: string): string | SkillItem => {
+  for (const category of Object.values(skills)) {
+    const found = category.find(item => {
+      if (typeof item === "string") return item === techName;
+      return item.name === techName;
+    });
+    
+    if (found) {
+      // If found as string, return string (no description available)
+      // If found as object, return object (has description)
+      return found;
+    }
+  }
+  return techName;
+};
 
 export default function Projects() {
   return (
@@ -33,12 +51,7 @@ export default function Projects() {
               
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.technologies.map((tech, idx) => (
-                  <span 
-                    key={idx} 
-                    className="px-3 py-1 text-sm rounded-md bg-background-secondary text-foreground border border-foreground"
-                  >
-                    {tech}
-                  </span>
+                  <SkillPill key={idx} skill={getSkillWithDescription(tech)} />
                 ))}
               </div>
               
