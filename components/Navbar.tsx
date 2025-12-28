@@ -7,6 +7,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -67,11 +68,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 transition-all duration-300 bg-background ${
+      className={`fixed w-full top-0 px-6 z-50 transition-all duration-300 bg-background ${
         scrolled ? "shadow-sm" : ""
       }`}
     >
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto w-full">
         <div className="flex justify-between items-center h-20">
           <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <svg className="logo" viewBox="-20 -10 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,9 +142,42 @@ export default function Navbar() {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
+              
+              <button 
+                className="md:hidden text-foreground-secondary hover:text-foreground transition-colors"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  {mobileMenuOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
             </div>
           </div>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-20 left-0 w-full bg-background border-b border-border shadow-lg py-4 px-6 flex flex-col gap-4">
+             {["about", "projects", "contact"].map((link) => (
+                <a
+                  key={link}
+                  href={`#${link}`}
+                  className={`capitalize text-lg font-medium transition-colors ${
+                    activeLink === link 
+                      ? 'text-foreground' 
+                      : 'text-foreground-secondary'
+                  }`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link}
+                </a>
+              ))}
+          </div>
+        )}
       </div>
     </nav>
   );
