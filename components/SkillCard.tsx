@@ -14,7 +14,7 @@ export default function SkillCard({ category, items }: SkillCardProps) {
   const [opacity, setOpacity] = useState(0);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!divRef.current) return;
+    if (!divRef.current || !divRef.current.matches(':hover')) return;
 
     const div = divRef.current;
     const rect = div.getBoundingClientRect();
@@ -23,7 +23,9 @@ export default function SkillCard({ category, items }: SkillCardProps) {
   };
 
   const handleMouseEnter = () => {
-    setOpacity(1);
+    if (divRef.current?.matches(':hover')) {
+      setOpacity(1);
+    }
   };
 
   const handleMouseLeave = () => {

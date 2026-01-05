@@ -73,7 +73,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-4xl mx-auto w-full">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex items-center h-20 gap-4">
           <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <svg className="logo" viewBox="-20 -10 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle className="dot" cx="20.5" cy="15" r="2.5"/>
@@ -89,7 +89,7 @@ export default function Navbar() {
             </svg>
           </a>
 
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 ml-auto">
             <div className="hidden md:flex space-x-8">
               {["about", "projects", "contact"].map((link) => (
                 <a
