@@ -99,6 +99,7 @@ export const projects = [
       "Received $7,500 grant from Human Rights Foundation",
       "Optimized for resource-constrained hardware",
     ],
+    link: "https://nkdigitalfreedom.org",
     period: "June 2024 - May 2025",
   },
 ];
