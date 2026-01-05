@@ -58,7 +58,7 @@ export const experience = [
     location: "Seoul, South Korea",
     period: "June 2025 - August 2025",
     description: [
-      "Built and deployed an AI agent for automating IoT workflows using Model Context Protocol (MCP)",
+      "Built and deployed an AI agent to automate IoT workflows using Model Context Protocol (MCP)",
       "Applied machine learning–based anomaly detection to analyze IoT device data",
       "Served as a primary contributor to MySmaX’s user-facing production website using Next.js",
     ],
@@ -85,7 +85,7 @@ export const projects = [
     highlights: [
       "Built a deep neural network using CNNs to analyze ski racing technique",
       "Used YOLO for pose extraction and frame-by-frame analysis",
-      "Achieved reliable results aligning with real race performances",
+      "Achieved results that consistently aligned with real race performances",
     ],
     github: "https://github.com/bestsemper/ski-racing-video-analysis",
     period: "August 2024 - May 2025",
