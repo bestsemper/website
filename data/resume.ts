@@ -71,8 +71,8 @@ export const experience = [
     description: [
       "USACO Gold Division",
       "American Invitational Mathematics Examination (AIME) Qualifier (4 times)",
-      "Member of the Putnam and ICPC Club at UVA",
-      "Former member of TJ Varsity Math Team",
+      "Member of the Putnam and ICPC Club at UVA; Former member of TJ Varsity Math Team",
+      "Jane Street Estimathon Winner in 2024, 2025"
     ],
   },
 ];
