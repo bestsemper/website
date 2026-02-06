@@ -132,7 +132,6 @@
     stroke-dasharray: 0px 0;
     animation: appear 10s ease forwards infinite;
     transform-origin: center;
-    stroke: #303030;
     animation-delay: 0s;
     fill: var(--logo-dot);
     transition: fill 0.3s ease;
