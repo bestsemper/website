@@ -79,6 +79,30 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Hoos' Plan",
+    description: "Full-stack UVA course planning website that helps students build semester-by-semester academic plans and validate enrollment requirements including prerequisites, corequisites, and other restrictions.",
+    technologies: ["TypeScript", "Next.js", "Python", "Prisma", "Tailwind CSS"],
+    highlights: [
+      "Built full-stack from scratch — designed the database schema, REST API, and React frontend",
+      "Scraped and parsed UVA's course catalog to populate prerequisite and corequisite graphs",
+      "Validates complex enrollment chains in real-time as students drag courses into semesters",
+    ],
+    link: "https://hoosplan.com/",
+    github: "https://github.com/bestsemper/hoos-plan",
+  },
+  {
+    title: "ML@UVA Club Website",
+    description: "Ongoing development and maintenance of ML@UVA's official organization website.",
+    technologies: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
+    highlights: [
+      "Migrated the codebase from Vite to Next.js to secure API keys server-side",
+      "Completely redesigned the UI across all pages",
+      "Added and reorganized site pages and kept content up to date",
+    ],
+    link: "https://www.mlatuva.org/",
+    github: "https://github.com/ML-UVA/website",
+  },
+  {
     title: "Alpine Ski Racing AI Analysis Model",
     description: "Deep neural network using CNNs to provide ski racers with quantitative feedback from video analysis.",
     technologies: ["Python", "YOLO", "PyTorch", "CNNs"],
@@ -132,6 +156,7 @@ export const skillDefinitions = {
   "YOLO": "Real-time object detection system.",
   "CNNs": "Convolutional Neural Networks for visual imagery analysis.",
   "HuggingFace": "Platform and community for open-source machine learning models.",
+  "Prisma": "Next-generation ORM for Node.js and TypeScript.",
 };
 
 export const skills = {
