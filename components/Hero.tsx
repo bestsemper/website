@@ -1,6 +1,6 @@
 "use client";
 
-import { personalInfo } from "@/data/resume";
+import { personalInfo, about } from "@/data/resume";
 
 export default function Hero() {
   return (
@@ -10,7 +10,7 @@ export default function Hero() {
           {personalInfo.name}
         </h1>
         <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl text-foreground-secondary">
-          Computer Science student at the University of Virginia. I work on machine learning research, build full-stack applications, and compete in programming competitions.
+          {about.description}
         </p>
         <div className="flex flex-wrap gap-4">
           <a

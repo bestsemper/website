@@ -1,6 +1,6 @@
 "use client";
 
-import { about, education, experience, skills } from "@/data/resume";
+import { education, experience, skills } from "@/data/resume";
 import SkillCard from "./SkillCard";
 
 export default function About() {
@@ -10,12 +10,6 @@ export default function About() {
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-foreground">About</h2>
         
         <div className="space-y-16">
-          <div>
-            <p className="text-lg leading-relaxed mb-6 text-foreground">
-              {about.description}
-            </p>
-          </div>
-
           <div>
             <h3 className="text-2xl font-semibold mb-8 text-foreground">Education</h3>
             <div className="space-y-6">
