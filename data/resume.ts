@@ -107,7 +107,7 @@ export const projects = [
     description: "Hackathon project — a sandbox for evaluating whether AI agents become deceptive, manipulative, or engage in self-preservation behaviors when facing shutdown or replacement.",
     technologies: ["TypeScript", "Next.js", "Python", "FastAPI", "Tailwind CSS"],
     highlights: [
-      "Built 13 test scenarios probing misalignment behaviors like self-preservation, prompt injection, role drift, and deceptive reasoning",
+      "Built 13 test scenarios covering misalignment behaviors like self-preservation, prompt injection, role drift, and deceptive reasoning",
       "Tracked alignment scores, deception indicators, unsafe action rates, and shutdown interference across runs",
     ],
     link: "https://modduel.vercel.app/",
