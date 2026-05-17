@@ -54,7 +54,7 @@ export const experience = [
   },
   {
     title: "Full Stack Developer Intern",
-    company: "MySmaX Lab (AIoT Startup), Seoul National University",
+    company: "MySmaX (AIoT Startup), Seoul National University",
     location: "Seoul, South Korea",
     period: "June 2025 - August 2025",
     description: [
