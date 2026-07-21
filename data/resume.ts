@@ -7,7 +7,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  description: "Computer Science student at the University of Virginia. I like building full-stack apps, working on AI research, and doing competitive math and programming.",
+  description: "Computer Science student at the University of Virginia and software engineer at N2O. I like building full-stack apps, working on AI research, and doing competitive math and programming.",
 };
 
 export const education = [
@@ -41,6 +41,16 @@ export const education = [
 ];
 
 export const experience = [
+  {
+    title: "Software Engineer",
+    company: "N2O (Deaver Varney LLC), Enterprise & Government Software Consultancy",
+    location: "Remote",
+    period: "May 2026 - Present",
+    description: [
+      "Build and maintain internal tooling used across the company's engineering and client-delivery work",
+      "Own features end-to-end (design, implementation, testing, and deployment), working directly with the CTO on a small distributed engineering team",
+    ],
+  },
   {
     title: "Researcher",
     company: "ML@UVA × Johns Hopkins APL",
@@ -78,6 +88,18 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: "Hide in Plain Sight!",
+    description: "Solo-developed and shipped a cross-platform (PC, mobile, tablet) multiplayer hide-and-seek Roblox game with 8 worlds.",
+    technologies: ["Lua", "Roblox Studio", "Blender"],
+    highlights: [
+      "Engineered a wall- and ceiling-climbing character controller and a surface-camouflage paint system in Lua",
+      "Modeled the game's 3D characters in Blender",
+      "Reached the top 10,000 Roblox games within a month of release, with 68K+ visits and 150 peak concurrent players",
+    ],
+    link: "https://www.roblox.com/games/112146781421413/Hide-in-Plain-Sight",
+    period: "June 2026 - Present",
+  },
   {
     title: "Hoos' Plan",
     description: "A course planning site for UVA students to map out their semesters and check prerequisites, corequisites, and other enrollment restrictions.",
@@ -144,6 +166,7 @@ export const skillDefinitions = {
   "Java": "Object-oriented programming for scalable applications.",
   "C++": "High-performance computing and systems programming.",
   "JavaScript": "Core technology for interactive web development.",
+  "Lua": "Lightweight scripting language used for Roblox game development.",
   "TypeScript": "Typed superset of JavaScript for robust application scale.",
   "HTML": "Standard markup language for web documents.",
   "CSS": "Style sheet language for web presentation.",
@@ -157,6 +180,8 @@ export const skillDefinitions = {
   "Docker": "Platform for developing, shipping, and running applications in containers.",
   "Linux Shell": "Command-line interface for interacting with the operating system.",
   "Jira": "Issue tracking and project management tool.",
+  "Blender": "Open-source 3D modeling and animation software.",
+  "Roblox Studio": "Development environment for building Roblox games.",
   "AWS": "Comprehensive cloud computing platform.",
   "PyTorch": "Open source machine learning framework.",
   "TensorFlow": "End-to-end open source platform for machine learning.",
@@ -177,6 +202,7 @@ export const skills = {
     { name: "C++", description: skillDefinitions["C++"] },
     { name: "JavaScript", description: skillDefinitions["JavaScript"] },
     { name: "TypeScript", description: skillDefinitions["TypeScript"] },
+    { name: "Lua", description: skillDefinitions["Lua"] },
     { name: "HTML", description: skillDefinitions["HTML"] },
     { name: "CSS", description: skillDefinitions["CSS"] },
   ],
@@ -192,6 +218,7 @@ export const skills = {
     { name: "Git", description: skillDefinitions["Git"] },
     { name: "Docker", description: skillDefinitions["Docker"] },
     { name: "Linux Shell", description: skillDefinitions["Linux Shell"] },
+    { name: "Blender", description: skillDefinitions["Blender"] },
     { name: "Jira", description: skillDefinitions["Jira"] },
     { name: "AWS", description: skillDefinitions["AWS"] },
   ],
@@ -209,6 +236,7 @@ export const skills = {
 export const languages = ["English (Native)", "Korean (Native)", "Latin (Advanced Prose & Poetry)"];
 
 export const activities = [
+  "ML@UVA Operations Officer",
   "Alpine ski racer",
   "Certified junior ski coach",
   "USACO Gold Division",
