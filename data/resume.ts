@@ -47,8 +47,8 @@ export const experience = [
     location: "Remote",
     period: "May 2026 - Present",
     description: [
-      "Build and maintain internal tooling used across the company's engineering and client-delivery work",
-      "Own features end-to-end (design, implementation, testing, and deployment), working directly with the CTO on a small distributed engineering team",
+      "Developed an enterprise client's learning content platform end to end, designed to replace their commercial system (client under NDA)",
+      "Built and maintained internal tooling used across engineering and client delivery, working directly with the CTO",
     ],
   },
   {
@@ -68,9 +68,9 @@ export const experience = [
     location: "Seoul, South Korea",
     period: "June 2025 - August 2025",
     description: [
-      "Designed and deployed an AI agent to automate IoT workflows using Model Context Protocol (MCP)",
-      "Applied machine learning–based anomaly detection to analyze real-time IoT device telemetry",
-      "Served as primary frontend contributor to MySmaX's production website, implementing Figma designs in Next.js",
+      "Designed and deployed an AI agent that automates workflows for any IoT device connected to MySmaX's JOI platform, using Model Context Protocol (MCP)",
+      "Applied machine learning-based anomaly detection to analyze real-time IoT device telemetry",
+      "Built MySmaX's production website frontend in Next.js as primary contributor, implementing Figma designs",
     ],
   },
   {
@@ -140,9 +140,9 @@ export const projects = [
     description: "Deep neural network using CNNs to provide ski racers with quantitative feedback from video analysis.",
     technologies: ["Python", "YOLO", "PyTorch", "CNNs"],
     highlights: [
-      "Built a deep neural network using CNNs to give ski racers quantitative feedback from a video",
-      "Used computer vision models to analyze videos and extract skiers' pose data",
-      "Achieved results that consistently aligned with real race performances",
+      "Built a CNN-based computer vision pipeline that extracts skiers' pose data from race videos to give technique feedback",
+      "Validated the model against real races, showing technique scores correlated with finish times",
+      "Documented the pipeline and results in a TJHSST senior research paper",
     ],
     github: "https://github.com/bestsemper/ski-racing-video-analysis",
     period: "August 2024 - May 2025",
