@@ -106,7 +106,7 @@ export const projects = [
     description: "A course planning site for UVA students to map out their semesters and check prerequisites, corequisites, and other enrollment restrictions.",
     technologies: ["TypeScript", "Next.js", "Python", "Prisma", "Tailwind CSS"],
     highlights: [
-      "Built full-stack from scratch — database schema, REST API, and React frontend",
+      "Built full-stack from scratch: database schema, REST API, and React frontend",
       "Scraped UVA's course catalog to build out prerequisite and corequisite graphs",
       "Checks enrollment restrictions in real-time as students plan their schedules",
     ],
@@ -119,7 +119,7 @@ export const projects = [
     technologies: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
     highlights: [
       "Migrated the codebase from Vite to Next.js to secure API keys server-side",
-      "Completely redesigned the UI across all pages",
+      "Redesigned the UI across all pages",
       "Added and reorganized site pages and kept content up to date",
     ],
     link: "https://www.mlatuva.org/",
@@ -127,7 +127,7 @@ export const projects = [
   },
   {
     title: "ModDuel Arena",
-    description: "Hackathon project — a sandbox for evaluating whether AI agents become deceptive, manipulative, or engage in self-preservation behaviors when facing shutdown or replacement.",
+    description: "Hackathon project: a sandbox for evaluating whether AI agents become deceptive, manipulative, or engage in self-preservation behaviors when facing shutdown or replacement.",
     technologies: ["TypeScript", "Next.js", "Python", "FastAPI", "Tailwind CSS"],
     highlights: [
       "Built 13 test scenarios covering misalignment behaviors like self-preservation, prompt injection, role drift, and deceptive reasoning",
