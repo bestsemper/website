@@ -95,7 +95,7 @@ export const projects = [
     highlights: [
       "Engineered a wall- and ceiling-climbing character controller and a surface-camouflage paint system in Lua",
       "Modeled the game's 3D characters in Blender",
-      "Reached the top 10,000 Roblox games within a month of release, with 68K+ visits and 150 peak concurrent players",
+      "Reached the top 10,000 Roblox games within a month of release, with 72K+ visits and 150 peak concurrent players",
     ],
     link: "https://www.roblox.com/games/112146781421413/Hide-in-Plain-Sight",
     period: "June 2026 - Present",
