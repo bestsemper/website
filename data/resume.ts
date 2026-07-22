@@ -140,9 +140,8 @@ export const projects = [
     description: "Deep neural network using CNNs to provide ski racers with quantitative feedback from video analysis.",
     technologies: ["Python", "YOLO", "PyTorch", "CNNs"],
     highlights: [
-      "Built a CNN-based computer vision pipeline that extracts skiers' pose data from race videos to give technique feedback",
+      "Built a computer vision pipeline that extracts skiers' pose data from race videos to give technique feedback",
       "Validated the model against real races, showing technique scores correlated with finish times",
-      "Documented the pipeline and results in a TJHSST senior research paper",
     ],
     github: "https://github.com/bestsemper/ski-racing-video-analysis",
     period: "August 2024 - May 2025",
