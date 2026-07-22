@@ -47,8 +47,8 @@ export const experience = [
     location: "Remote",
     period: "May 2026 - Present",
     description: [
-      "Developed an enterprise client's learning content platform end to end, designed to replace their commercial system (client under NDA)",
-      "Built and maintained internal tooling used across engineering and client delivery, working directly with the CTO",
+      "Developed a learning content platform to replace an enterprise client's commercial system (client under NDA)",
+      "Owned client projects end-to-end (design, implementation, testing, and deployment), rotating to a new system every few weeks, working directly with the CTO on a small distributed engineering team",
     ],
   },
   {
