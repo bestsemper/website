@@ -68,7 +68,7 @@ export const experience = [
     location: "Seoul, South Korea",
     period: "June 2025 - August 2025",
     description: [
-      "Designed and deployed an AI agent that automates workflows for any IoT device connected to MySmaX's JOI platform, using Model Context Protocol (MCP)",
+      "Designed and deployed an AI agent that automates IoT device workflows using Model Context Protocol (MCP)",
       "Applied machine learning-based anomaly detection to analyze real-time IoT device telemetry",
       "Built MySmaX's production website frontend in Next.js as primary contributor, implementing Figma designs",
     ],
