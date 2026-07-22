@@ -90,7 +90,7 @@ export const experience = [
 export const projects = [
   {
     title: "Hide in Plain Sight!",
-    description: "Solo-developed and shipped a cross-platform (PC, mobile, tablet) multiplayer hide-and-seek Roblox game with 8 worlds.",
+    description: "Solo-developed and shipped a cross-platform (PC, mobile, tablet) multiplayer hide-and-seek Roblox game.",
     technologies: ["Lua", "Roblox Studio", "Blender"],
     highlights: [
       "Engineered a wall- and ceiling-climbing character controller and a surface-camouflage paint system in Lua",
